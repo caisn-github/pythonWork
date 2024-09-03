@@ -1,0 +1,13 @@
+// this is a test from json format to csv format
+
+// JSON format: ‘{“name”: "JSON", "age":30, "car":null}’
+
+
+// CSV format:
+// name, age, car
+// json, 30, null
+
+// function: firist  read a json, use "" to spilt first line , and use tow buffer to record
+
+ 
+
