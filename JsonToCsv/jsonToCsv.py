@@ -15,27 +15,42 @@
 ## use disctpry to record and write into files
 test = '{"name":"json", "age" : "30", "car":"null"}'
 
+
 f = open("test.csv","w")
 f_dict = dict()
 y_split = test.split("{")
 print(y_split)
 
-x_split = test.split(",")   ## first split the ,
-for i in x_split :
-    i_split = i.split(":")  ## second split the :
-    f_dict[i_split[0]] = i_split[1] ## we suppose that it isi rigid format 	
+# here we can add into a function
+
+def readInBraces():
+    x_split = test.split(",")   ## first split the ,
+        for i in x_split :
+        i_split = i.split(":")  ## second split the :
+        f_dict[i_split[0]] = i_split[1] ## we suppose that it isi rigid format 	
 
 ## write keys
-for i in f_dict.keys():
-    print(i)
-    f.write(i+",")
-f.write("\n")
+def writeKeys():
+    for i in f_dict.keys():
+        print(i)
+        f.write(i+",")
+    f.write("\n")
 
 ## write values
-for i in  f_dict.values():
-    f.write(i+",")
-f.write("\n")
+def writeValues():
+    for i in  f_dict.values():
+        f.write(i+",")
+    f.write("\n")
 
+
+if __name__=="__main__":
+    readOneFiles
+    f1 = open("JsonInput.txt", "r")
+    f2 = open("CsvOutput.csv","w")
+     first: read f1 and split in {
+             use for circle to readInBraces
+                   writekeys
+                   use for to writeValues
 
 ## then start to write into files
 
