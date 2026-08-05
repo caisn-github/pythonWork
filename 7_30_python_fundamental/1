@@ -1,0 +1,6 @@
+from collections import Counter
+if __name__ == '__main__':
+    data = ['a','z','a']
+    counter = Counter(data)
+    print(data)
+    print(counter)

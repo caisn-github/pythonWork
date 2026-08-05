@@ -1,0 +1,9 @@
+## 这个是用来解决最长公共子序列的问题的
+
+import sys
+
+if __name__ == '__main__':
+    str1,str2=map(str, input().split(","))
+    str1.strip('"')
+    print(len(str1))
+    print(str2)

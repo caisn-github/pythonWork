@@ -1,0 +1,15 @@
+def LC_70(n:int):
+    idp = [0] * n
+    if n <= 1:
+        return 1
+    idp[0] = 1 # 这个是为了方便进行初始化
+    idp[1] = 1
+    for i in range (2,n+1):
+        idp[i] = idp[i-1] + idp[i]
+    
+    return idp
+
+if __name__ == '__main__':
+    idp = LC_70(3)
+    print(idp)
+    print(1)
