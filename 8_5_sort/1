@@ -1,0 +1,28 @@
+# 这是一个用来练习排序算法的python
+
+import sys
+
+def my_bubble_sort(n:int, mylist:list):
+    ## 这个是冒泡排序的解法
+    for i in range (n):
+        flag = bool(0)
+        for j in range(n-i):
+            ## 每一轮都交换数字，小的在左，大的在右，直到冒泡冒到最上面
+            if mylist[j] > mylist[j+1]:
+                tmp = mylist[j]
+                mylist[j] = mylist[j]
+                mylist[j] = tmp
+
+    print(mylist)
+    return
+
+
+if __name__ == '__main__':
+    #n = int(input().strip())
+    #print(n)
+    #mylist = list(map(int, input().split()))
+    ## 假设已经获取了数据
+    n=10
+    mylist = [9,7,3,4,1,2,8,0,5,6]
+    print(mylist)
+    my_bubble_sort(n,mylist)
