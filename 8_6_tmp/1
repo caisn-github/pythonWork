@@ -1,0 +1,7 @@
+## 这是用来解决LC283,移动0的。
+def move0():
+    return
+
+if __name__ == '__main__':
+    nums = list(map(int, input().split(",")))
+    print(nums)
